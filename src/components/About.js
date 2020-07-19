@@ -4,8 +4,7 @@ import "./about.css";
 export default function About() {
   return (
     <>
-      <div className="linear"></div>
-      {/* <div className="linear2"></div> */}
+      <div className="bg-image"></div>
     </>
   );
 }
