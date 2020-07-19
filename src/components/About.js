@@ -36,19 +36,22 @@ export default function About() {
               <span className="progress-right">
                 <span className="progress-bar"></span>
               </span>
+
               <div className="progress-value">90%</div>
             </div>
+            <h5 className='my-4'>students</h5>
           </div>
           <div className="col-md-3 col-sm-6">
-            <div className="progress blue">
+            <div className="progress green">
               <span className="progress-left">
                 <span className="progress-bar"></span>
               </span>
               <span className="progress-right">
                 <span className="progress-bar"></span>
               </span>
-              <div className="progress-value">90%</div>
+              <div className="progress-value">85%</div>
             </div>
+            <h5 className='my-4'>old peoples</h5>
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="progress yellow">
@@ -60,6 +63,7 @@ export default function About() {
               </span>
               <div className="progress-value">75%</div>
             </div>
+            <h5 className='my-4'>teenagers</h5>
           </div>
         </div>
       </div>

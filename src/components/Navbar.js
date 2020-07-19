@@ -24,13 +24,7 @@ height: "40px";
         background-color: #18A0FB;
         color: white;
     }
-    .custom-dialog{
-      margin-top: 10%;
-      max-width: 65%;
-     
   
-    }
-
     `}
       </style>
 
@@ -59,8 +53,9 @@ height: "40px";
             Login
           </Button>
 
-          <Modal closeButton show={show} onHide={toogle} dialogClassName="custom-dialog" >
-            <Modal.Header closeButton>  <h1>Log in Now</h1></Modal.Header>
+          <Modal closeButton show={show} onHide={toogle} size="lg"
+            centered>
+            <Modal.Header closeButton style={{ borderBottom: 'none' }}>  <h1>Log in Now</h1></Modal.Header>
             <Modal.Body >
               <Row>
                 <Col>
@@ -82,7 +77,7 @@ height: "40px";
                     </Row>
                   </Form>
                 </Col>
-                <Col lg={4} md={4} className='d-flex justify-content-end'>
+                <Col lg={4} md={4} >
                   <div >
                     <img
                       src={require("../images/signup.png")}
@@ -104,8 +99,9 @@ height: "40px";
             Register
           </Button>
 
-          <Modal show={show2} onHide={toogle2} dialogClassName="custom-dialog">
-            <Modal.Header closeButton>
+          <Modal show={show2} onHide={toogle2} size="lg" style={{ paddingLeft: '0px !important' }}
+            centered >
+            <Modal.Header closeButton style={{ borderBottom: 'none' }}>
               <Modal.Title>Sign up Now</Modal.Title>
             </Modal.Header>
             <Modal.Body >
@@ -148,7 +144,7 @@ height: "40px";
                   </Form>
                 </Col>
 
-                <Col lg={4} md={4} className='d-flex justify-content-end'>
+                <Col lg={4} md={4} >
                   <div >
                     <img
                       src={require("../images/login.png")}
