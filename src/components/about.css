@@ -1,0 +1,22 @@
+.linear {
+  position: absolute;
+  width: 100vw;
+  height: 214px;
+  left: 0px;
+  top: 60px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(34, 152, 241, 0.1) 0%,
+    rgba(24, 160, 251, 0.01) 100%
+  );
+}
+.linear2 {
+  position: absolute;
+  width: 1723px;
+  height: 722px;
+  left: -191px;
+  top: 60px;
+
+  background: rgba(24, 160, 251, 0.3);
+}
