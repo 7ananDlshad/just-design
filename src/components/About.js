@@ -1,5 +1,7 @@
 import React from "react";
 import "./about.css";
+import "./circle.css";
+
 
 export default function About() {
   return (
@@ -13,7 +15,7 @@ export default function About() {
         <p>   it so hard  for 6 weeks.</p>
       </div>
 
-      <div className='text-center' style={{ marginTop: '10%' }}>
+      <div className='text-center' style={{ marginTop: '7%' }}>
         <h1>What is Take a Bus?</h1>
         <hr style={{ width: '30%' }} />
         <p>Take a Bus this is  our project name and it was the idea of our amzing team </p>
@@ -21,7 +23,46 @@ export default function About() {
         <p>and save their time as well,so by using this website they will be able to see each </p>
         <p>bus route ,destinatioon ,timing, and also stop station for each bus.</p>
       </div>
+      <div className="container text-center" style={{ marginTop: '7%' }}>
+        <h1>Who use Take a Bus?</h1>
+        <hr style={{ width: '40%' }} />
+        <div className="row d-flex justify-content-center my-5">
 
+          <div className="col-md-3 col-sm-6 ">
+            <div className="progress blue">
+              <span className="progress-left">
+                <span className="progress-bar"></span>
+              </span>
+              <span className="progress-right">
+                <span className="progress-bar"></span>
+              </span>
+              <div className="progress-value">90%</div>
+            </div>
+          </div>
+          <div className="col-md-3 col-sm-6">
+            <div className="progress blue">
+              <span className="progress-left">
+                <span className="progress-bar"></span>
+              </span>
+              <span className="progress-right">
+                <span className="progress-bar"></span>
+              </span>
+              <div className="progress-value">90%</div>
+            </div>
+          </div>
+          <div className="col-md-3 col-sm-6">
+            <div className="progress yellow">
+              <span className="progress-left">
+                <span className="progress-bar"></span>
+              </span>
+              <span className="progress-right">
+                <span className="progress-bar"></span>
+              </span>
+              <div className="progress-value">75%</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </>
   );
