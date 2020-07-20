@@ -1,9 +1,7 @@
 import React from "react";
 import "./about.css";
 import "./circle.css";
-
-import { Button, Carousel } from "react-bootstrap";
-
+import { Button, Row, Col } from "react-bootstrap";
 export default function About() {
   return (
     <>
@@ -52,10 +50,10 @@ export default function About() {
         </p>
       </div>
 
-      <div className="container text-center" style={{ marginTop: "7%" }}>
-        <h1>Who use Take a Bus?</h1>
-        <hr style={{ width: "40%" }} />
-        <div className="row d-flex justify-content-center my-5" style={{ backgroundColor: ' rgba(24, 160, 251, 0.1' }}>
+      <div className="text-center" style={{ marginTop: "7%", backgroundColor: ' rgba(24, 160, 251, 0.1' }}>
+        <h1 className='pt-3'>Who use Take a Bus?</h1>
+        <hr style={{ width: "30%" }} />
+        <div className="row d-flex justify-content-center my-5" >
           <div className="col-md-3 col-sm-6 ">
             <div className="progress blue">
               <span className="progress-left">
@@ -67,7 +65,7 @@ export default function About() {
 
               <div className="progress-value">90%</div>
             </div>
-            <h5 className='my-4'>students</h5>
+            <h5 className="my-4">students</h5>
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="progress green">
@@ -79,7 +77,7 @@ export default function About() {
               </span>
               <div className="progress-value">85%</div>
             </div>
-            <h5 className='my-4'>old peoples</h5>
+            <h5 className="my-4">old peoples</h5>
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="progress yellow">
@@ -91,51 +89,12 @@ export default function About() {
               </span>
               <div className="progress-value">75%</div>
             </div>
-            <h5 className='my-4'>teenagers</h5>
+            <h5 className="my-4">teenagers</h5>
           </div>
         </div>
       </div>
 
-      <Carousel>
-        <Carousel.Item >
-          <img
-            className="w-100 "
-            src={require("../images/cat.jpg")}
-            alt="First slide"
 
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item >
-          <img
-            className=" w-100 "
-            src={require("../images/cat.jpg")}
-            alt="Third slide"
-
-          />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item >
-          <img
-            className="w-100 "
-            src={require("../images/cat.jpg")}
-            alt="Third slide"
-
-          />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
 
     </>
   );
