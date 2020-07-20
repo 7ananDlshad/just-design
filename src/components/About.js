@@ -1,7 +1,9 @@
 import React from "react";
 import "./about.css";
 import "./circle.css";
-import { Button } from "react-bootstrap";
+
+import { Button, Carousel } from "react-bootstrap";
+
 export default function About() {
   return (
     <>
@@ -16,7 +18,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="text-center my-5">
+      <div className="text-center " style={{ marginTop: "7%" }}>
         <h1>Who are we?</h1>
         <hr style={{ width: "20%" }} />
         <p>
@@ -49,10 +51,11 @@ export default function About() {
           bus route ,destinatioon ,timing, and also stop station for each bus.
         </p>
       </div>
+
       <div className="container text-center" style={{ marginTop: "7%" }}>
         <h1>Who use Take a Bus?</h1>
         <hr style={{ width: "40%" }} />
-        <div className="row d-flex justify-content-center my-5">
+        <div className="row d-flex justify-content-center my-5" style={{ backgroundColor: ' rgba(24, 160, 251, 0.1' }}>
           <div className="col-md-3 col-sm-6 ">
             <div className="progress blue">
               <span className="progress-left">
@@ -92,6 +95,48 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      <Carousel>
+        <Carousel.Item >
+          <img
+            className="w-100 "
+            src={require("../images/cat.jpg")}
+            alt="First slide"
+
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item >
+          <img
+            className=" w-100 "
+            src={require("../images/cat.jpg")}
+            alt="Third slide"
+
+          />
+
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item >
+          <img
+            className="w-100 "
+            src={require("../images/cat.jpg")}
+            alt="Third slide"
+
+          />
+
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+
     </>
   );
 }

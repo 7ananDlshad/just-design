@@ -102,7 +102,7 @@ height: "40px";
           <Modal show={show2} onHide={toogle2} size="lg" style={{ paddingLeft: '0px !important' }}
             centered >
             <Modal.Header closeButton style={{ borderBottom: 'none' }}>
-              <Modal.Title>Sign up Now</Modal.Title>
+              <Modal.Title><h1>Sign up Now</h1></Modal.Title>
             </Modal.Header>
             <Modal.Body >
               <Row>
