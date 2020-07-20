@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Button, Modal, Form, Row, Col } from "react-bootstrap";
 
-
 export default function Navbar1() {
   const [show, setShow] = useState(false);
   let toogle = () => setShow((prev) => !prev);
@@ -48,41 +47,69 @@ height: "40px";
             show={show}
             variant="login"
             onClick={toogle}
-            className='px-4 py-1'
+            className="px-4 py-1"
           >
             Login
           </Button>
 
-          <Modal closeButton show={show} onHide={toogle} size="lg"
-            centered>
-            <Modal.Header closeButton style={{ borderBottom: 'none' }}>  <h1>Log in Now</h1></Modal.Header>
-            <Modal.Body >
+          <Modal closeButton show={show} onHide={toogle} size="lg" centered>
+            <Modal.Header closeButton style={{ borderBottom: "none" }}>
+              {" "}
+              <h1>Log in Now</h1>
+            </Modal.Header>
+            <Modal.Body>
               <Row>
                 <Col>
-                  <Form className=' my-5' >
-                    <Row >
-                      <Col> <Form.Group >
-                        <Form.Control type="email" placeholder="Enter email" />
-                      </Form.Group></Col>
-                    </Row>
-                    <Row className='my-2'>
+                  <Form className=" my-5">
+                    <Row>
                       <Col>
-                        <Form.Group >
-                          <Form.Control type="password" placeholder="Password" />
+                        {" "}
+                        <Form.Group>
+                          <Form.Control
+                            type="email"
+                            placeholder="Enter email"
+                          />
+                        </Form.Group>
+                      </Col>
+                    </Row>
+                    <Row className="my-2">
+                      <Col>
+                        <Form.Group>
+                          <Form.Control
+                            type="password"
+                            placeholder="Password"
+                          />
                         </Form.Group>
                       </Col>
                     </Row>
                     <Row>
-                      <Col><Button variant='register' className='px-4 my-2' style={{ boxShadow: '3px 3px 10px rgba(0, 0, 0, 0.25)' }}> Log in</Button></Col>
+                      <Col>
+                        <Button
+                          variant="register"
+                          className="px-4 my-2"
+                          style={{
+                            boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.25)",
+                          }}
+                        >
+                          Log in
+                        </Button>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col>
+                        <a href="#forget-password" style={{ color: "red" }}>
+                          forget password?
+                        </a>
+                      </Col>
                     </Row>
                   </Form>
                 </Col>
-                <Col lg={4} md={4} >
-                  <div >
+                <Col lg={4} md={4}>
+                  <div>
                     <img
                       src={require("../images/signup.png")}
                       alt="my pic"
-                      style={{ width: '100%', height: '100%', }}
+                      style={{ width: "100%", height: "100%" }}
                     />
                   </div>
                 </Col>
@@ -94,62 +121,83 @@ height: "40px";
             show={show2}
             variant="register"
             onClick={toogle2}
-            className='px-4 py-1'
+            className="px-4 py-1"
           >
             Register
           </Button>
 
-          <Modal show={show2} onHide={toogle2} size="lg" style={{ paddingLeft: '0px !important' }}
-            centered >
-            <Modal.Header closeButton style={{ borderBottom: 'none' }}>
-              <Modal.Title><h1>Sign up Now</h1></Modal.Title>
+          <Modal
+            show={show2}
+            onHide={toogle2}
+            size="lg"
+            style={{ paddingLeft: "0px !important" }}
+            centered
+          >
+            <Modal.Header closeButton style={{ borderBottom: "none" }}>
+              <Modal.Title>
+                <h1>Sign up Now</h1>
+              </Modal.Title>
             </Modal.Header>
-            <Modal.Body >
+            <Modal.Body>
               <Row>
                 <Col>
-                  <Form className='my-5' >
+                  <Form className="my-5">
                     <Row>
                       <Col>
-                        <Form.Group  >
+                        <Form.Group>
                           <Form.Control type="text" placeholder="First name" />
                         </Form.Group>
                       </Col>
                       <Col>
-                        <Form.Group >
+                        <Form.Group>
                           <Form.Control type="text" placeholder="Last name" />
                         </Form.Group>
                       </Col>
                     </Row>
 
-                    <Row className='my-2'>
+                    <Row className="my-2">
                       <Col>
-                        <Form.Group >
-                          <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Group>
+                          <Form.Control
+                            type="email"
+                            placeholder="Enter email"
+                          />
                         </Form.Group>
                       </Col>
                     </Row>
 
                     <Row>
                       <Col>
-                        <Form.Group >
-                          <Form.Control type="password" placeholder="Create password" />
+                        <Form.Group>
+                          <Form.Control
+                            type="password"
+                            placeholder="Create password"
+                          />
                         </Form.Group>
                       </Col>
                     </Row>
                     <Row>
                       <Col>
-                        <Button variant='register' className='px-4 my-2' style={{ boxShadow: '3px 3px 10px rgba(0, 0, 0, 0.25)' }}>Register</Button>
+                        <Button
+                          variant="register"
+                          className="px-4 my-2"
+                          style={{
+                            boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.25)",
+                          }}
+                        >
+                          Register
+                        </Button>
                       </Col>
                     </Row>
                   </Form>
                 </Col>
 
-                <Col lg={4} md={4} >
-                  <div >
+                <Col lg={4} md={4}>
+                  <div>
                     <img
                       src={require("../images/login.png")}
                       alt="my pic"
-                      style={{ width: '100%', height: '100%', }}
+                      style={{ width: "100%", height: "100%" }}
                     />
                   </div>
                 </Col>

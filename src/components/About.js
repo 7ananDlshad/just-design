@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import "./circle.css";
-import { Button, Row, Col } from "react-bootstrap";
+import { Button, Row, Col, Card, CardDeck } from "react-bootstrap";
 export default function About() {
   return (
     <>
@@ -16,7 +16,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="text-center " style={{ marginTop: "7%" }}>
+      <div className="text-center " style={{ marginTop: "3%" }}>
         <h1>Who are we?</h1>
         <hr style={{ width: "20%" }} />
         <p>
@@ -50,10 +50,13 @@ export default function About() {
         </p>
       </div>
 
-      <div className="text-center" style={{ marginTop: "7%", backgroundColor: ' rgba(24, 160, 251, 0.1' }}>
-        <h1 className='pt-3'>Who use Take a Bus?</h1>
+      <div
+        className="text-center"
+        style={{ marginTop: "7%", backgroundColor: " rgba(24, 160, 251, 0.1" }}
+      >
+        <h1 className="pt-3">Who use Take a Bus?</h1>
         <hr style={{ width: "30%" }} />
-        <div className="row d-flex justify-content-center my-5" >
+        <div className="row d-flex justify-content-center my-5">
           <div className="col-md-3 col-sm-6 ">
             <div className="progress blue">
               <span className="progress-left">
@@ -94,8 +97,145 @@ export default function About() {
         </div>
       </div>
 
+      <div className="text-center" style={{ marginTop: "5%" }}>
+        <h1>What do we give you?</h1>
+        <hr style={{ width: "30%" }} />
+        <Row>
+          <Col lg={5} style={{ marginTop: "7%" }}>
+            <Row>
+              <Col className="d-flex justify-content-end align-item-center">
+                <img
+                  src={require("../images/time.png")}
+                  alt="my pic"
+                  style={{ width: "33%", height: "67%" }}
+                />
+              </Col>
+              <Col>
+                <h4>Check the time </h4>
+                <small>
+                  You can go to the route time of the busses and check the best
+                  time for you.
+                </small>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="d-flex justify-content-end align-item-center py-5">
+                <img
+                  src={require("../images/route.png")}
+                  alt="my pic"
+                  style={{ width: "35%", height: "78%" }}
+                />
+              </Col>
+              <Col className="py-5">
+                <h4>Check your route </h4>
+                <small>
+                  Choose the best route for you and for your travel.
+                </small>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="d-flex justify-content-end align-item-center">
+                <img
+                  src={require("../images/destination.png")}
+                  alt="my pic"
+                  style={{ width: "35%", height: "78%" }}
+                />
+              </Col>
+              <Col>
+                <h4>Get to your destination </h4>
+                <small>
+                  Go in the bus and get to your place and enjoy your time.
+                </small>
+              </Col>
+            </Row>
+          </Col>
 
+          <Col lg={7}>
+            <img
+              src={require("../images/take-bus.png")}
+              alt="my pic"
+              style={{ width: "100%", height: "100%" }}
+            />
+          </Col>
+        </Row>
+      </div>
 
+      <div className="px-5 text-center" style={{ marginTop: "5%" }}>
+        <h1>Want to meet us?</h1>
+        <hr style={{ width: "25%" }} />
+
+        <CardDeck className="py-5">
+          <Card
+            style={{ border: "none" }}
+            className="col-lg-3 col-md-6 col-sm-12"
+          >
+            <Card.Img variant="top" src={require("../images/good-man.jpg")} />
+            <Card.Body>
+              <Card.Title>Ahmed Duhoki</Card.Title>
+              <Card.Text>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card
+            style={{ border: "none" }}
+            className="col-lg-3 col-md-6 col-sm-12"
+          >
+            <Card.Img variant="top" src={require("../images/good-man.jpg")} />
+            <Card.Body>
+              <Card.Title>Hanan Dlshad</Card.Title>
+              <Card.Text>
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card
+            style={{ border: "none" }}
+            className="col-lg-3 col-md-6 col-sm-12"
+          >
+            <Card.Img variant="top" src={require("../images/good-man.jpg")} />
+            <Card.Body>
+              <Card.Title>Ahmed Al-kheerow</Card.Title>
+              <Card.Text>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card
+            style={{ border: "none" }}
+            className="col-lg-3 col-md-6 col-sm-12"
+          >
+            <Card.Img variant="top" src={require("../images/good-man.jpg")} />
+            <Card.Body>
+              <Card.Title>Shna Rafeeq</Card.Title>
+              <Card.Text>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card
+            style={{ border: "none" }}
+            className="col-lg-3 col-md-6 col-sm-12"
+          >
+            <Card.Img variant="top" src={require("../images/good-man.jpg")} />
+            <Card.Body>
+              <Card.Title>Jalal Arif</Card.Title>
+              <Card.Text>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </CardDeck>
+      </div>
     </>
   );
 }
