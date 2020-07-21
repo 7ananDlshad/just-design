@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Button, Modal, Form, Row, Col } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTimesCircle
+} from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Navbar1() {
   const [show, setShow] = useState(false);
@@ -47,15 +52,20 @@ height: "40px";
             show={show}
             variant="login"
             onClick={toogle}
-            className="px-4 py-1"
+            className="px-4 py-1 mx-2"
+
           >
             Login
           </Button>
 
           <Modal closeButton show={show} onHide={toogle} size="lg" centered>
-            <Modal.Header closeButton style={{ borderBottom: "none" }}>
-              {" "}
+            <Modal.Header style={{ borderBottom: "none" }}>
               <h1>Log in Now</h1>
+              <button onClick={toogle}
+                style={{ border: 'none', backgroundColor: 'white', fontSize: '20px' }}> <FontAwesomeIcon
+                  icon={faTimesCircle}
+                  style={{ color: 'red' }}
+                /></button>
             </Modal.Header>
             <Modal.Body>
               <Row>
@@ -63,7 +73,6 @@ height: "40px";
                   <Form className=" my-5">
                     <Row>
                       <Col>
-                        {" "}
                         <Form.Group>
                           <Form.Control
                             type="email"
@@ -133,10 +142,13 @@ height: "40px";
             style={{ paddingLeft: "0px !important" }}
             centered
           >
-            <Modal.Header closeButton style={{ borderBottom: "none" }}>
-              <Modal.Title>
-                <h1>Sign up Now</h1>
-              </Modal.Title>
+            <Modal.Header style={{ borderBottom: "none" }}>
+              <h1>Sign up Now</h1>
+              <button onClick={toogle2}
+                style={{ border: 'none', backgroundColor: 'white', fontSize: '20px' }}> <FontAwesomeIcon
+                  icon={faTimesCircle}
+                  style={{ color: 'red' }}
+                /></button>
             </Modal.Header>
             <Modal.Body>
               <Row>
