@@ -2,11 +2,25 @@ import React from "react";
 import "./about.css";
 import "./circle.css";
 import { Button, Row, Col, Card, CardDeck } from "react-bootstrap";
+
 export default function About() {
   return (
     <>
       <div className="bg-image">
-        <div style={{ padding: "8% 14%" }}>
+        <svg
+          viewBox="0 0 1440 722"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ position: "absolute" }}
+        >
+          <path
+            d="M1142.4 28.0474C1190.19 -22.7491 1422.05 6.88217 1532 28.0474V722H-24.3327C-134.807 674.503 -301.938 588.809 -86.6691 626.007C182.416 672.503 9.9523 582.51 123.716 543.012C209.252 513.315 177.664 437.238 164.67 413.851C163.877 413.019 163.237 412.225 162.759 411.472C158.119 404.153 160.382 406.132 164.67 413.851C194.929 445.556 448.521 531.352 450.546 488.967C452.624 445.47 521.713 526.464 598.075 488.967C674.437 451.469 668.723 392.973 699.372 325.478C730.021 257.982 826.642 220.485 915.472 198.486C1004.3 176.488 1082.66 91.5431 1142.4 28.0474Z"
+            fill="#18A0FB"
+            fillOpacity="0.3"
+          />
+        </svg>
+
+        <div style={{ position: "absolute", padding: "8% 14%" }}>
           <h1>TAKE A BUS NOW </h1>
           <p style={{ paddingLeft: "13%" }}>or</p>
           <h4 className="px-3">Miss your chance forever</h4>

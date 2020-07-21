@@ -21,7 +21,7 @@ export default function Navbar1() {
       color: #18A0FB;
       border:1px solid #18A0FB;
       width: "130px";
-height: "40px";
+      height: "40px";
     }
 
     .btn-register {
