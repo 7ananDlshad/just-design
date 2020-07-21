@@ -61,11 +61,11 @@ export default function Navbar1() {
           <Modal closeButton show={show} onHide={toogle} size="lg" centered>
             <Modal.Header style={{ borderBottom: "none" }}>
               <h1>Log in Now</h1>
-              <button onClick={toogle}
-                style={{ border: 'none', backgroundColor: 'white', fontSize: '20px' }}> <FontAwesomeIcon
-                  icon={faTimesCircle}
-                  style={{ color: 'red' }}
-                /></button>
+              <FontAwesomeIcon
+                onClick={toogle}
+                icon={faTimesCircle}
+                style={{ color: 'red', fontSize: '20px', cursor: 'pointer' }}
+              />
             </Modal.Header>
             <Modal.Body>
               <Row>
@@ -144,11 +144,11 @@ export default function Navbar1() {
           >
             <Modal.Header style={{ borderBottom: "none" }}>
               <h1>Sign up Now</h1>
-              <button onClick={toogle2}
-                style={{ border: 'none', backgroundColor: 'white', fontSize: '20px' }}> <FontAwesomeIcon
-                  icon={faTimesCircle}
-                  style={{ color: 'red' }}
-                /></button>
+              <FontAwesomeIcon
+                onClick={toogle2}
+                icon={faTimesCircle}
+                style={{ color: 'red', fontSize: '20px', cursor: 'pointer' }}
+              />
             </Modal.Header>
             <Modal.Body>
               <Row>
