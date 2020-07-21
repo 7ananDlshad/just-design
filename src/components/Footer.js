@@ -28,7 +28,7 @@ export default function Footer() {
       <div className="container main-footer">
         <Row className="p-3">
           <Col>
-            <h1>React-Bootstrap</h1>
+            <h1>photo</h1>
           </Col>
           <Col className="d-flex justify-content-end">
             <a href="https://www.facebook.com/7anan.engineer">
@@ -66,9 +66,10 @@ export default function Footer() {
           </Col>
         </Row>
         <hr />
-        <Row className="p-3">
-          <Col>
-            <h3>Want to talk with Us?</h3>
+
+        <Row >
+          <Col sm={12} lg={4} md={4} className='mt-3'>
+            <h4>Want to talk with Us?</h4>
             <p>We are always at your service</p>
             <FontAwesomeIcon
               icon={faMapMarkerAlt}
@@ -91,8 +92,8 @@ export default function Footer() {
             />
             <small>+9647512310232</small>
           </Col>
-          <Col>
-            <h3>Our Services</h3>
+          <Col sm={12} lg={4} md={4} className='mt-3'>
+            <h4>Our Services</h4>
             <ul>
               <li>Route list</li>
               <li>Provide Busses</li>
@@ -101,8 +102,8 @@ export default function Footer() {
               <li>Mobile Development</li>
             </ul>
           </Col>
-          <Col>
-            <h3>Contact Us</h3>
+          <Col sm={12} lg={4} md={4} className='mt-3'>
+            <h4>Contact Us</h4>
             <Form>
               <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>Email:</Form.Label>
@@ -130,7 +131,7 @@ export default function Footer() {
         <hr />
         <Row className="p-3">
           <Col align="middle">
-            <small>&copy; Copyright Royal Team 2020</small>
+            <small>&copy; Copyright Royal Diamond Team 2020</small>
           </Col>
         </Row>
       </div>

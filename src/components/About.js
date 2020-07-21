@@ -30,15 +30,15 @@ export default function About() {
         </div>
       </div>
 
-      <div className="text-center " style={{ marginTop: "3%" }}>
+      <div className=" container text-center " style={{ marginTop: "3%" }}>
         <h1>Who are we?</h1>
         <hr style={{ width: "20%" }} />
         <p>
-          We are Diamond Team consist of 5 members and we are all fellows at
+          We are Royal Diamond Team consist of 5 members and we are all fellows at
           Re:Coded
         </p>
         <p>
-          Front-End Web development for 2020. This is our capstone project,we
+          Front-End Web development Bootcamp for 2020. This is our capstone project,we
           worked on
         </p>
         <p> it so hard for 6 weeks.</p>
@@ -174,14 +174,14 @@ export default function About() {
         </Row>
       </div>
 
+      {/* members */}
       <div className="px-5 text-center" style={{ marginTop: "5%" }}>
         <h1>Want to meet us?</h1>
         <hr style={{ width: "25%" }} />
 
-        <CardDeck className="py-5">
+        <CardDeck className="py-3">
           <Card
             style={{ border: "none" }}
-            className="col-lg-3 col-md-6 col-sm-12"
           >
             <Card.Img variant="top" src={require("../images/good-man.jpg")} />
             <Card.Body>
@@ -195,7 +195,7 @@ export default function About() {
           </Card>
           <Card
             style={{ border: "none" }}
-            className="col-lg-3 col-md-6 col-sm-12"
+
           >
             <Card.Img variant="top" src={require("../images/good-man.jpg")} />
             <Card.Body>
@@ -208,7 +208,7 @@ export default function About() {
           </Card>
           <Card
             style={{ border: "none" }}
-            className="col-lg-3 col-md-6 col-sm-12"
+
           >
             <Card.Img variant="top" src={require("../images/good-man.jpg")} />
             <Card.Body>
@@ -222,7 +222,7 @@ export default function About() {
           </Card>
           <Card
             style={{ border: "none" }}
-            className="col-lg-3 col-md-6 col-sm-12"
+
           >
             <Card.Img variant="top" src={require("../images/good-man.jpg")} />
             <Card.Body>
@@ -236,7 +236,7 @@ export default function About() {
           </Card>
           <Card
             style={{ border: "none" }}
-            className="col-lg-3 col-md-6 col-sm-12"
+
           >
             <Card.Img variant="top" src={require("../images/good-man.jpg")} />
             <Card.Body>
